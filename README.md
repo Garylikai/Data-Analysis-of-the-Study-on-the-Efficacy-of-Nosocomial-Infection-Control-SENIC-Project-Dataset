@@ -3,5 +3,5 @@ AMS 572: Data Analysis, Fall 2020, December 1, 2020
 
 - Description in a `pdf` file
 - Datasets in `xlsx` format
-- Code implementation in `r` and `rmd` files
+- Code implementation in an `r` file
 - Analysis report in `pdf` format
