@@ -1,6 +1,5 @@
-install.packages("readxl")
 library("readxl")
-data <- read_excel("~/Desktop/hospital.xlsx")
+data <- read_excel("/hospital.xlsx")
 
 dim(data)
 
@@ -19,6 +18,7 @@ shapiro.test(data_new$`length of stay`)
 
 t.test(data_new$`length of stay`, mu = 9)
 
+set.seed(2020)
 data_rand <- data_new[sample(nrow(data_new), ceiling(0.8*nrow(data_new))),]
 
 dim(data_rand)
@@ -38,6 +38,5 @@ summary(logit)
 confint(logit)
 
 
-install.packages("aod")
 library(aod) 
 wald.test(b = coef(logit), Sigma = vcov(logit), Terms = 2:6)
