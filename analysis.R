@@ -1,5 +1,5 @@
 library("readxl")
-data <- read_excel("/hospital.xlsx")
+readxl::read_excel("hospital.xlsx")
 
 dim(data)
 
